@@ -111,64 +111,7 @@
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Would you rather seeing a spam in your inbox (false negative), or having a normal email get deleted by spam detector (false positive)? It is clear that the cost of false positive is much higher than false negative. Therefore, to keep false positive as few as possible, we should use &ldquo;Precision&rdquo; as the evaluation metric.</span></p>
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Conclusion</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Hope this short blog has given you some perspective on the evaluation metrics of a system in the world of data science. Do not hesitate to contact me if you have any questions!</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Where:</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">TP: True Positive &ndash; Correctly identify a positive sample (e.g., liar)</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">TN: True Negative &ndash; Correctly identify a negative sample (e.g., non-liar)</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">FP: False Positive &ndash; Incorrectly identify a negative sample as positive (e.g., picked a non-liar as liar)</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">FN: False Negative &ndash; Incorrectly identify a positive sample as negative (e.g., picked a liar as non-liar)</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="font-size:15px;">Applications in Real Life</span></strong></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Now that we have a basic understanding of the three &ldquo;accuracy&rdquo; matrices, let&rsquo;s take a look at how they are actually put to use in real life.&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<div style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: decimal;">
-        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="font-size:15px;">Disease Diagnose</span></strong></li>
-    </ol>
-</div>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Suppose a hospital just bought a state-of-the-art cancer detector. What would be an appropriate evaluation metric? We will consider patients detected with cancer as positive case.</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Using &ldquo;Precision&rdquo; as an evaluation metric, our question becomes:&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="font-size:15px;">Out of the patients that got identified with cancer, how many actually have cancers?</span></em></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Using &ldquo;Recall&rdquo; as an evaluation metric, our question becomes:&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="font-size:15px;">Out of the total number of cancer patients, how many actually got detected?</span></em></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Using &ldquo;Accuracy&rdquo; as an evaluation metric, our question becomes:&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="font-size:15px;">Out of the total number of patients that got tested, how many test results are correct?</span></em></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Because the consequence of failing at detecting cancer for a patient is huge, we would rather be detecting healthy people with cancer (false positive), than failing to detect real cancer patients (false negative). &nbsp;In other words, we want to keep false negatives as few as possible. &nbsp;Therefore, &ldquo;recall&rdquo; should be considered as number one metric.&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<div style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>
-    <ol style="margin-bottom:0cm;list-style-type: undefined;">
-        <li style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><strong><span style="font-size:15px;">Spam Detection</span></strong></li>
-    </ol>
-</div>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Going back to the beginning, suppose we are evaluating spam detection function for Gmail. What would be an appropriate evaluation metric? We will consider spam as positive case.</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Using &ldquo;Precision&rdquo; as an evaluation metric, our question becomes:&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="font-size:15px;">Out of the emails that got identified as spam, how many are actually spams?</span></em></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Using &ldquo;Recall&rdquo; as an evaluation metric, our question becomes:&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="font-size:15px;">Out of the total number of spams scanned, how many actually got detected?</span></em></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Using &ldquo;Accuracy&rdquo; as an evaluation metric, our question becomes:&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><em><span style="font-size:15px;">Out of the total number of emails scanned, how many classifications are correct?</span></em></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Would you rather seeing a spam in your inbox (false negative), or having a normal email get deleted by spam detector (false positive)? It is clear that the cost of false positive is much higher than false negative. Therefore, to keep false positive as few as possible, we should use &ldquo;Precision&rdquo; as the evaluation metric.</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;"><strong>Conclusion</strong></span></p>
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">Hope this short blog has given you some perspective on the evaluation metrics of a system in the world of data science. Do not hesitate to contact me if you have any questions!</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
-<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><span style="font-size:15px;">&nbsp;</span></p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'><br></p>
